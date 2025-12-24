@@ -1,0 +1,418 @@
+[
+  {
+    "name": "conv1",
+    "weight_shape": [
+      96,
+      3,
+      7,
+      7
+    ],
+    "bias_shape": [
+      96
+    ],
+    "weight_offset": 0,
+    "bias_offset": 0,
+    "num_weights": 14112,
+    "num_biases": 96
+  },
+  {
+    "name": "fire2_squeeze",
+    "weight_shape": [
+      16,
+      96,
+      1,
+      1
+    ],
+    "bias_shape": [
+      16
+    ],
+    "weight_offset": 14112,
+    "bias_offset": 96,
+    "num_weights": 1536,
+    "num_biases": 16
+  },
+  {
+    "name": "fire2_expand1x1",
+    "weight_shape": [
+      64,
+      16,
+      1,
+      1
+    ],
+    "bias_shape": [
+      64
+    ],
+    "weight_offset": 15648,
+    "bias_offset": 112,
+    "num_weights": 1024,
+    "num_biases": 64
+  },
+  {
+    "name": "fire2_expand3x3",
+    "weight_shape": [
+      64,
+      16,
+      3,
+      3
+    ],
+    "bias_shape": [
+      64
+    ],
+    "weight_offset": 16672,
+    "bias_offset": 176,
+    "num_weights": 9216,
+    "num_biases": 64
+  },
+  {
+    "name": "fire3_squeeze",
+    "weight_shape": [
+      16,
+      128,
+      1,
+      1
+    ],
+    "bias_shape": [
+      16
+    ],
+    "weight_offset": 25888,
+    "bias_offset": 240,
+    "num_weights": 2048,
+    "num_biases": 16
+  },
+  {
+    "name": "fire3_expand1x1",
+    "weight_shape": [
+      64,
+      16,
+      1,
+      1
+    ],
+    "bias_shape": [
+      64
+    ],
+    "weight_offset": 27936,
+    "bias_offset": 256,
+    "num_weights": 1024,
+    "num_biases": 64
+  },
+  {
+    "name": "fire3_expand3x3",
+    "weight_shape": [
+      64,
+      16,
+      3,
+      3
+    ],
+    "bias_shape": [
+      64
+    ],
+    "weight_offset": 28960,
+    "bias_offset": 320,
+    "num_weights": 9216,
+    "num_biases": 64
+  },
+  {
+    "name": "fire4_squeeze",
+    "weight_shape": [
+      32,
+      128,
+      1,
+      1
+    ],
+    "bias_shape": [
+      32
+    ],
+    "weight_offset": 38176,
+    "bias_offset": 384,
+    "num_weights": 4096,
+    "num_biases": 32
+  },
+  {
+    "name": "fire4_expand1x1",
+    "weight_shape": [
+      128,
+      32,
+      1,
+      1
+    ],
+    "bias_shape": [
+      128
+    ],
+    "weight_offset": 42272,
+    "bias_offset": 416,
+    "num_weights": 4096,
+    "num_biases": 128
+  },
+  {
+    "name": "fire4_expand3x3",
+    "weight_shape": [
+      128,
+      32,
+      3,
+      3
+    ],
+    "bias_shape": [
+      128
+    ],
+    "weight_offset": 46368,
+    "bias_offset": 544,
+    "num_weights": 36864,
+    "num_biases": 128
+  },
+  {
+    "name": "fire5_squeeze",
+    "weight_shape": [
+      32,
+      256,
+      1,
+      1
+    ],
+    "bias_shape": [
+      32
+    ],
+    "weight_offset": 83232,
+    "bias_offset": 672,
+    "num_weights": 8192,
+    "num_biases": 32
+  },
+  {
+    "name": "fire5_expand1x1",
+    "weight_shape": [
+      128,
+      32,
+      1,
+      1
+    ],
+    "bias_shape": [
+      128
+    ],
+    "weight_offset": 91424,
+    "bias_offset": 704,
+    "num_weights": 4096,
+    "num_biases": 128
+  },
+  {
+    "name": "fire5_expand3x3",
+    "weight_shape": [
+      128,
+      32,
+      3,
+      3
+    ],
+    "bias_shape": [
+      128
+    ],
+    "weight_offset": 95520,
+    "bias_offset": 832,
+    "num_weights": 36864,
+    "num_biases": 128
+  },
+  {
+    "name": "fire6_squeeze",
+    "weight_shape": [
+      48,
+      256,
+      1,
+      1
+    ],
+    "bias_shape": [
+      48
+    ],
+    "weight_offset": 132384,
+    "bias_offset": 960,
+    "num_weights": 12288,
+    "num_biases": 48
+  },
+  {
+    "name": "fire6_expand1x1",
+    "weight_shape": [
+      192,
+      48,
+      1,
+      1
+    ],
+    "bias_shape": [
+      192
+    ],
+    "weight_offset": 144672,
+    "bias_offset": 1008,
+    "num_weights": 9216,
+    "num_biases": 192
+  },
+  {
+    "name": "fire6_expand3x3",
+    "weight_shape": [
+      192,
+      48,
+      3,
+      3
+    ],
+    "bias_shape": [
+      192
+    ],
+    "weight_offset": 153888,
+    "bias_offset": 1200,
+    "num_weights": 82944,
+    "num_biases": 192
+  },
+  {
+    "name": "fire7_squeeze",
+    "weight_shape": [
+      48,
+      384,
+      1,
+      1
+    ],
+    "bias_shape": [
+      48
+    ],
+    "weight_offset": 236832,
+    "bias_offset": 1392,
+    "num_weights": 18432,
+    "num_biases": 48
+  },
+  {
+    "name": "fire7_expand1x1",
+    "weight_shape": [
+      192,
+      48,
+      1,
+      1
+    ],
+    "bias_shape": [
+      192
+    ],
+    "weight_offset": 255264,
+    "bias_offset": 1440,
+    "num_weights": 9216,
+    "num_biases": 192
+  },
+  {
+    "name": "fire7_expand3x3",
+    "weight_shape": [
+      192,
+      48,
+      3,
+      3
+    ],
+    "bias_shape": [
+      192
+    ],
+    "weight_offset": 264480,
+    "bias_offset": 1632,
+    "num_weights": 82944,
+    "num_biases": 192
+  },
+  {
+    "name": "fire8_squeeze",
+    "weight_shape": [
+      64,
+      384,
+      1,
+      1
+    ],
+    "bias_shape": [
+      64
+    ],
+    "weight_offset": 347424,
+    "bias_offset": 1824,
+    "num_weights": 24576,
+    "num_biases": 64
+  },
+  {
+    "name": "fire8_expand1x1",
+    "weight_shape": [
+      256,
+      64,
+      1,
+      1
+    ],
+    "bias_shape": [
+      256
+    ],
+    "weight_offset": 372000,
+    "bias_offset": 1888,
+    "num_weights": 16384,
+    "num_biases": 256
+  },
+  {
+    "name": "fire8_expand3x3",
+    "weight_shape": [
+      256,
+      64,
+      3,
+      3
+    ],
+    "bias_shape": [
+      256
+    ],
+    "weight_offset": 388384,
+    "bias_offset": 2144,
+    "num_weights": 147456,
+    "num_biases": 256
+  },
+  {
+    "name": "fire9_squeeze",
+    "weight_shape": [
+      64,
+      512,
+      1,
+      1
+    ],
+    "bias_shape": [
+      64
+    ],
+    "weight_offset": 535840,
+    "bias_offset": 2400,
+    "num_weights": 32768,
+    "num_biases": 64
+  },
+  {
+    "name": "fire9_expand1x1",
+    "weight_shape": [
+      256,
+      64,
+      1,
+      1
+    ],
+    "bias_shape": [
+      256
+    ],
+    "weight_offset": 568608,
+    "bias_offset": 2464,
+    "num_weights": 16384,
+    "num_biases": 256
+  },
+  {
+    "name": "fire9_expand3x3",
+    "weight_shape": [
+      256,
+      64,
+      3,
+      3
+    ],
+    "bias_shape": [
+      256
+    ],
+    "weight_offset": 584992,
+    "bias_offset": 2720,
+    "num_weights": 147456,
+    "num_biases": 256
+  },
+  {
+    "name": "conv10",
+    "weight_shape": [
+      10,
+      512,
+      1,
+      1
+    ],
+    "bias_shape": [
+      10
+    ],
+    "weight_offset": 732448,
+    "bias_offset": 2976,
+    "num_weights": 5120,
+    "num_biases": 10
+  }
+]

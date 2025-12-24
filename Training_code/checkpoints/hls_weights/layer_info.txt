@@ -1,0 +1,187 @@
+SqueezeNet v1.0 - Q3.4 (ap_fixed<8,4>)
+============================================================
+
+conv1:
+  shape: (96, 3, 7, 7)
+  w_offset: 0, w_count: 14112
+  b_offset: 0, b_count: 96
+  w_range: [-2.6875, 2.3125]
+  b_range: [-0.1875, 4.5000]
+
+fire2_squeeze:
+  shape: (16, 96, 1, 1)
+  w_offset: 14112, w_count: 1536
+  b_offset: 96, b_count: 16
+  w_range: [-1.3125, 5.6250]
+  b_range: [-0.0625, 0.5625]
+
+fire2_expand1x1:
+  shape: (64, 16, 1, 1)
+  w_offset: 15648, w_count: 1024
+  b_offset: 112, b_count: 64
+  w_range: [-0.6250, 0.6875]
+  b_range: [-0.0625, 0.0625]
+
+fire2_expand3x3:
+  shape: (64, 16, 3, 3)
+  w_offset: 16672, w_count: 9216
+  b_offset: 176, b_count: 64
+  w_range: [-0.2500, 0.5625]
+  b_range: [0.0000, 0.0625]
+
+fire3_squeeze:
+  shape: (16, 128, 1, 1)
+  w_offset: 25888, w_count: 2048
+  b_offset: 240, b_count: 16
+  w_range: [-1.1250, 1.2500]
+  b_range: [0.0000, 0.0000]
+
+fire3_expand1x1:
+  shape: (64, 16, 1, 1)
+  w_offset: 27936, w_count: 1024
+  b_offset: 256, b_count: 64
+  w_range: [-0.5625, 0.5000]
+  b_range: [0.0000, 0.0000]
+
+fire3_expand3x3:
+  shape: (64, 16, 3, 3)
+  w_offset: 28960, w_count: 9216
+  b_offset: 320, b_count: 64
+  w_range: [-0.2500, 0.2500]
+  b_range: [0.0000, 0.0000]
+
+fire4_squeeze:
+  shape: (32, 128, 1, 1)
+  w_offset: 38176, w_count: 4096
+  b_offset: 384, b_count: 32
+  w_range: [-0.8125, 0.9375]
+  b_range: [0.0000, 0.0000]
+
+fire4_expand1x1:
+  shape: (128, 32, 1, 1)
+  w_offset: 42272, w_count: 4096
+  b_offset: 416, b_count: 128
+  w_range: [-0.4375, 0.3750]
+  b_range: [0.0000, 0.0000]
+
+fire4_expand3x3:
+  shape: (128, 32, 3, 3)
+  w_offset: 46368, w_count: 36864
+  b_offset: 544, b_count: 128
+  w_range: [-0.1875, 0.1875]
+  b_range: [0.0000, 0.0000]
+
+fire5_squeeze:
+  shape: (32, 256, 1, 1)
+  w_offset: 83232, w_count: 8192
+  b_offset: 672, b_count: 32
+  w_range: [-0.8750, 1.0625]
+  b_range: [0.0000, 0.0000]
+
+fire5_expand1x1:
+  shape: (128, 32, 1, 1)
+  w_offset: 91424, w_count: 4096
+  b_offset: 704, b_count: 128
+  w_range: [-0.3750, 0.4375]
+  b_range: [0.0000, 0.0000]
+
+fire5_expand3x3:
+  shape: (128, 32, 3, 3)
+  w_offset: 95520, w_count: 36864
+  b_offset: 832, b_count: 128
+  w_range: [-0.1875, 0.1875]
+  b_range: [0.0000, 0.0000]
+
+fire6_squeeze:
+  shape: (48, 256, 1, 1)
+  w_offset: 132384, w_count: 12288
+  b_offset: 960, b_count: 48
+  w_range: [-0.7500, 0.7500]
+  b_range: [-0.0625, 0.0000]
+
+fire6_expand1x1:
+  shape: (192, 48, 1, 1)
+  w_offset: 144672, w_count: 9216
+  b_offset: 1008, b_count: 192
+  w_range: [-0.3750, 0.4375]
+  b_range: [0.0000, 0.0000]
+
+fire6_expand3x3:
+  shape: (192, 48, 3, 3)
+  w_offset: 153888, w_count: 82944
+  b_offset: 1200, b_count: 192
+  w_range: [-0.1250, 0.1250]
+  b_range: [0.0000, 0.0000]
+
+fire7_squeeze:
+  shape: (48, 384, 1, 1)
+  w_offset: 236832, w_count: 18432
+  b_offset: 1392, b_count: 48
+  w_range: [-0.6875, 0.8125]
+  b_range: [0.0000, 0.0000]
+
+fire7_expand1x1:
+  shape: (192, 48, 1, 1)
+  w_offset: 255264, w_count: 9216
+  b_offset: 1440, b_count: 192
+  w_range: [-0.3750, 0.3750]
+  b_range: [-0.0625, 0.0000]
+
+fire7_expand3x3:
+  shape: (192, 48, 3, 3)
+  w_offset: 264480, w_count: 82944
+  b_offset: 1632, b_count: 192
+  w_range: [-0.1250, 0.1875]
+  b_range: [0.0000, 0.0000]
+
+fire8_squeeze:
+  shape: (64, 384, 1, 1)
+  w_offset: 347424, w_count: 24576
+  b_offset: 1824, b_count: 64
+  w_range: [-0.6875, 0.7500]
+  b_range: [0.0000, 0.0000]
+
+fire8_expand1x1:
+  shape: (256, 64, 1, 1)
+  w_offset: 372000, w_count: 16384
+  b_offset: 1888, b_count: 256
+  w_range: [-0.3125, 0.3750]
+  b_range: [0.0000, 0.0000]
+
+fire8_expand3x3:
+  shape: (256, 64, 3, 3)
+  w_offset: 388384, w_count: 147456
+  b_offset: 2144, b_count: 256
+  w_range: [-0.1250, 0.1250]
+  b_range: [0.0000, 0.0000]
+
+fire9_squeeze:
+  shape: (64, 512, 1, 1)
+  w_offset: 535840, w_count: 32768
+  b_offset: 2400, b_count: 64
+  w_range: [-0.7500, 0.7500]
+  b_range: [0.0000, 0.0000]
+
+fire9_expand1x1:
+  shape: (256, 64, 1, 1)
+  w_offset: 568608, w_count: 16384
+  b_offset: 2464, b_count: 256
+  w_range: [-0.3750, 0.3125]
+  b_range: [0.0000, 0.0000]
+
+fire9_expand3x3:
+  shape: (256, 64, 3, 3)
+  w_offset: 584992, w_count: 147456
+  b_offset: 2720, b_count: 256
+  w_range: [-0.1875, 0.1250]
+  b_range: [0.0000, 0.0000]
+
+conv10:
+  shape: (10, 512, 1, 1)
+  w_offset: 732448, w_count: 5120
+  b_offset: 2976, b_count: 10
+  w_range: [-1.5000, 1.7500]
+  b_range: [0.0000, 0.0000]
+
+
+Total: 737,568 weights, 2,986 biases
